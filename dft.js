@@ -15,6 +15,12 @@ function button() {
       sample = i;
     }
   }
+
+  if (chart) {
+    chart.destroy();
+    chart2.destroy();
+  }
+
   event();
 }
 
@@ -62,6 +68,7 @@ function event() {
     sum += 1;
   }
   var flabel = [...Array(sum).keys()]
+
 
   const canvas = document.getElementById('canvas');
   const mydata = {
