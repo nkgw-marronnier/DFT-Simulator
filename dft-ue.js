@@ -19,10 +19,10 @@ function check() {
     if (form1.sample.value > 5000) {
       alert("その数値の大きさでは端末が固まってしまいます。5000以下の値を入力しましょう。");
       return false;
-    } else if(form1.sample.value <= 2) {
+    } else if (form1.sample.value <= 2) {
       alert("その数値の小ささでは計算不能です。よく考えて3以上の値を入力しましょう。");
       return false;
-    }else{
+    } else {
 
       // グラフインスタンスの初期化
       if (chart3) {
