@@ -11,21 +11,27 @@ var fd = [];
 calculate2();
 graph2();
 
-function check(){
-  if(form1.formula1.value=="" || form1.sample.value=="" || form1.formula2.value=="" || form1.formula3.value=="" || form1.formula4.value==""){
+function check() {
+  if (form1.formula1.value == "" || form1.sample.value == "" || form1.formula2.value == "" || form1.formula3.value == "" || form1.formula4.value == "") {
     alert("説明欄をよく読んでから数式、またはサンプル数を「正しく」入力しよう");
     return false;
-  }else{
-    // グラフインスタンスの初期化
-  if (chart3) {
-    chart3.destroy();
-  }
-  if (chart4) {
-    chart4.destroy();
-  }
-    calculate2();
-    graph2();
-    return true;
+  } else {
+    if (form1.sample.value >= 5000) {
+      alert("その数値の大きさでは端末が固まってしまいます。5000以下の値を入力しましょう。");
+      return false;
+    } else {
+
+      // グラフインスタンスの初期化
+      if (chart3) {
+        chart3.destroy();
+      }
+      if (chart4) {
+        chart4.destroy();
+      }
+      calculate2();
+      graph2();
+      return true;
+    }
   }
 }
 
@@ -34,28 +40,28 @@ function calculate2() {
 
   P = form1.sample.value;
 
-  var a,b,c,d=0
-  a=form1.formula1.value;
-  b=form1.formula2.value;
-  c=form1.formula3.value;
-  d=form1.formula4.value;
+  var a, b, c, d = 0
+  a = form1.formula1.value;
+  b = form1.formula2.value;
+  c = form1.formula3.value;
+  d = form1.formula4.value;
 
   // 原関数定義
   function func_y(x) {
-    var e,g,h=0;
-    if(form1.sankaku.selectedIndex == 0){
-      e=a*Math.sin(b*x);
-    }else{
-      e=a*Math.cos(b*x);
+    var e, g, h = 0;
+    if (form1.sankaku.selectedIndex == 0) {
+      e = a * Math.sin(b * x);
+    } else {
+      e = a * Math.cos(b * x);
     }
-    if(form1.sankaku2.selectedIndex == 0){
-      g = c*Math.sin(d*x);
-    }else{
-      g = c*Math.cos(d*x);
+    if (form1.sankaku2.selectedIndex == 0) {
+      g = c * Math.sin(d * x);
+    } else {
+      g = c * Math.cos(d * x);
     }
-    if(form1.hugou.selectedIndex == 0){
+    if (form1.hugou.selectedIndex == 0) {
       h = e + g;
-    }else{
+    } else {
       h = e - g;
     }
     return h;
