@@ -5,6 +5,7 @@ html {
   height: auto;
   margin: 0px;
   padding: 0px;
+  flex: 1;
 }
 
 h1 {
@@ -26,7 +27,7 @@ h1:first-letter {
 
 h3 {
   font-size: 18px;
-  padding: 0.25em 0.5em;
+  padding: 0.0em 0.5em;
   color: #494949;
   background: transparent;
   border-left: solid 5px #a2de96;
@@ -109,16 +110,16 @@ ul li, ol li {
 }
 
 .wrapper {
-  min-height: 0vh;
+  min-height: 100vh;
   padding-bottom: 10px;
   box-sizing: border-box;
 }
 
 footer,
 .push {
-  width: 99%;
+  width: 100%;
   background-color: #32cd32;
   color: #fafafa;
   text-align: center;
-  padding: 10px;
+  padding: 5px 10px;
 }
