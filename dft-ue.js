@@ -103,7 +103,7 @@ function graph2() {
     datasets: [{
       label: '時間領域',
       data: fd,
-      borderColor: '#2f2',
+      borderColor: '#858',
       fill: false
     }],
   };

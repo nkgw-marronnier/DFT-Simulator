@@ -64,13 +64,13 @@ input[type=radio] {
 }
 
 #canvas3 {
-  background-color: #d0ffff;
+  background-color: #ddffff;
   border-radius: 20px;
   padding-right: 10px;
 }
 
 #canvas4 {
-  background-color: #d8ffd0;
+  background-color: #ddffdd;
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 70px;
@@ -91,6 +91,7 @@ input[type=radio] {
 }
 
 .button {
+  padding-top: 20px;
   margin: 15px 15px;
 }
 
