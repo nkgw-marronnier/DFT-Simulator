@@ -5,7 +5,7 @@ var jissuu = [];
 var sum = 0;
 var fd = [];
 
-event();
+calculate();
 graph();
 
 function button() {
@@ -27,11 +27,11 @@ function button() {
   if (chart2) {
     chart2.destroy();
   }
-  event();
+  calculate();
   graph();
 }
 
-function event() {
+function calculate() {
 
   if (sample == 0) {
     P = 10;
