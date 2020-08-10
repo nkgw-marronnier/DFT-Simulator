@@ -1,0 +1,167 @@
+// dft.js @nkgw-marronnier 2020
+// DFT計算部分のアルゴリズムは @sudahiroshi より引用
+// https://github.com/sudahiroshi/simple_dft
+
+var P = 0;
+var jissuu = [];
+var sum = 0;
+var fd = [];
+
+// 初回実行
+calculate2();
+graph2();
+
+function check(){
+  if(form1.formula1.value=="" || form1.sample.value=="" || form1.formula2.value=="" || form1.formula3.value=="" || form1.formula4.value==""){
+    alert("説明欄をよく読んでから数式、またはサンプル数を「正しく」入力しよう");
+    return false;
+  }else{
+    // グラフインスタンスの初期化
+  if (chart3) {
+    chart3.destroy();
+  }
+  if (chart4) {
+    chart4.destroy();
+  }
+    calculate2();
+    graph2();
+    return true;
+  }
+}
+
+// DFT計算アルゴリズム
+function calculate2() {
+
+  P = form1.sample.value;
+
+  var a,b,c,d=0
+  a=form1.formula1.value;
+  b=form1.formula2.value;
+  c=form1.formula3.value;
+  d=form1.formula4.value;
+
+  // 原関数定義
+  function func_y(x) {
+    var e,g,h=0;
+    if(form1.sankaku.selectedIndex == 0){
+      e=a*Math.sin(b*x);
+    }else{
+      e=a*Math.cos(b*x);
+    }
+    if(form1.sankaku2.selectedIndex == 0){
+      g = c*Math.sin(d*x);
+    }else{
+      g = c*Math.cos(d*x);
+    }
+    if(form1.hugou.selectedIndex == 0){
+      h = e + g;
+    }else{
+      h = e - g;
+    }
+    return h;
+  }
+
+  let f = new Array(P);
+  // データサンプリング
+  for (let m = 0; m < P; m++) {
+    f[m] = func_y(((2.0 * Math.PI) / P) * m);
+    //console.log(f[m]);
+  }
+  for (let i = 0, len = f.length; i < len; i++) {
+    fd[i] = f[i];
+    sum += 1;
+  }
+
+  // DFT係数計算
+  for (let n = 0; n < P; n++) {
+    let ar = 0.0;
+    let ai = 0.0;
+    let x;
+    for (let m = 0; m < P; m++) {
+      x = ((2.0 * Math.PI) / P) * m * n;
+      ar += f[m] * Math.cos(-x);
+      ai += f[m] * Math.sin(-x);
+    }
+    ar /= P;
+    ai /= P;
+    x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
+    jissuu[n] = Math.round(x * 100) / 100;
+  }
+}
+
+// グラフ描画
+function graph2() {
+
+  var flabel2 = [...Array(sum).keys()]
+
+  // 時間領域
+  var ctx3 = document.getElementById('canvas3').getContext('2d');
+
+  const mydata3 = {
+    labels: flabel2,
+
+    datasets: [{
+      label: '時間領域',
+      data: fd,
+      borderColor: '#2f2',
+      fill: false
+    }],
+  };
+
+  window.chart3 = new Chart(ctx3, {
+
+    type: 'line',
+    data: mydata3,
+    options: {
+      scales: {
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: '時間[t] →'
+          }
+        }],
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: '振幅'
+          }
+        }]
+      }
+    }
+  });
+
+  // 周波数領域
+  var ctx4 = document.getElementById('canvas4').getContext('2d');
+  const mydata4 = {
+    labels: flabel2,
+
+    datasets: [{
+      label: '周波数領域',
+      data: jissuu,
+      backgroundColor: '#f55'
+    }]
+  };
+
+  window.chart4 = new Chart(ctx4, {
+
+    type: 'bar',
+    data: mydata4,
+    options: {
+      scales: {
+        xAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: '周波数[Hz] →'
+          }
+        }],
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: '大きさ'
+          }
+        }]
+      }
+    }
+  });
+  sum = 0;
+}

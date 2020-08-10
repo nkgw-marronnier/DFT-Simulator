@@ -40,7 +40,7 @@ input[type=radio] {
 #panel {
   float: left;
   margin-right: auto;
-  width: 250px;
+  width: 300px;
 }
 
 #main {
@@ -57,6 +57,20 @@ input[type=radio] {
 
 #canvas2 {
   background-color: #fff0f5;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  padding-right: 10px;
+}
+
+#canvas3 {
+  background-color: #d0ffff;
+  border-radius: 20px;
+  padding-right: 10px;
+}
+
+#canvas4 {
+  background-color: #d8ffd0;
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 70px;

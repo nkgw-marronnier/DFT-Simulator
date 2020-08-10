@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>離散ﾌｰﾘｴ変換ｼﾐｭﾚｰﾀ上級版</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="nkgw-marronnier.ico">
+
+  <head>
+
+  <body>
+    <h1>離散フーリエ変換シミュレータ[上級版]</h1>
+    <div class="wrapper">
+      <div id="contents">
+        <div id="panel">
+          <div id="panel2">
+            <h3>離散フーリエ変換する数式</h3>
+            <form id="form1" action="#" name="form1">
+              y(x)=
+              <input type="text" name="formula1" size="5" value="1">
+              (
+              <select id="sankaku">
+                <option value="0" selected>sin</option>
+                <option value="1">cos</option>
+              </select>
+              <input type="text" name="formula2" size="2" value="2">
+              x)
+              <select id="hugou">
+                <option value="0" selected>+</option>
+                <option value="1">-</option>
+              </select>
+              <input type="text" name="formula3" size="5" value="1">(
+              <select id="sankaku2">
+                <option value="0">sin</option>
+                <option value="1" selected>cos</option>
+              </select>
+              <input type="text" name="formula4" size="2" value="4">
+              x)
+          </div>
+          <div>
+            <h3>標本数（サンプリング数）</h3>
+            <input type="text" name="sample" size="4" value="100">
+            <input type="button" onclick="check()" value="計算">
+            </form>
+          </div>
+          <div class="button">
+            <button type="button" class="normal" onclick="location.href='index.html'">初心者用ｼﾐｭﾚｰﾀ</button>
+          </div>
+        </div>
+        <div id="main">
+          <canvas id="canvas3" width="500" height="400">
+            非対応のブラウザです。
+          </canvas>
+          <canvas id="canvas4" width="500" height="400">
+            非対応のブラウザです。
+          </canvas>
+        </div>
+      </div>
+      <footer>
+        <p>Chiba Institute of Technology NS B3 nkgw-marronnier(1832099) 2020</p>
+      </footer>
+  </body>
+  <script src="dft-ue.js"></script>
+
+</html>
