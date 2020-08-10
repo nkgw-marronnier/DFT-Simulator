@@ -37,6 +37,18 @@ input[type=radio] {
   vertical-align: middle;
 }
 
+ul, ol {
+  color: #d13997;/*文字色*/
+  border: dashed 2px #e659eb;/*破線 太さ 色*/
+  background: #fce0fc; /*背景色*/
+  padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em;
+}
+
 #panel {
   float: left;
   margin-right: auto;
@@ -45,8 +57,8 @@ input[type=radio] {
 
 #main {
   width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 350px;
+  margin-right: auto;;
 }
 
 #canvas {
