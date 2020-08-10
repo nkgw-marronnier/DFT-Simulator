@@ -1,3 +1,5 @@
+// dft.js @nkgw-marronnier 2020
+
 var siki = 0;
 var sample = 0;
 var P = 0;
