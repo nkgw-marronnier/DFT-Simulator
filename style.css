@@ -2,6 +2,23 @@ body {
   background-color: #fafafa;
 }
 
+h1 {
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  font-size: 30px;
+  border-bottom: #CC66FF dashed 3px;
+
+  background-image: url("nkgw-marronnier.ico");
+  background-size: 55px 55px;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 65px;
+}
+
+h1:first-letter {
+  font-size: 50px;
+  color: #008000;
+}
+
 #panel {
   float: left;
   margin-right: auto;
