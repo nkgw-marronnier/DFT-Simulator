@@ -17,7 +17,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [早速, ページを閲覧する場合はこのリンクをクリックしてください.](https://nkgw-marronnier.github.io/DFT-Simulator/index.html)
 
-もし別ウィンドウで開きたい場合にはCtrlを押下しながらリンクをクリックしてください。
+もし別ウィンドウで開きたい場合にはCtrlを押下しながらリンクをクリックしてください.
 
 * Google Chrome
 * Opera
