@@ -11,6 +11,7 @@ var fd = [];
 calculate2();
 graph2();
 
+// 入力欄の確認とグラフの更新
 function check() {
   if (form1.formula1.value == "" || form1.sample.value == "" || form1.formula2.value == "" || form1.formula3.value == "" || form1.formula4.value == "") {
     alert("説明欄をよく読んでから数式、またはサンプル数を「正しく」入力しよう");
