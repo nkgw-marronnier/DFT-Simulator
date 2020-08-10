@@ -54,13 +54,13 @@ ul li, ol li {
 #panel {
   float: left;
   margin-right: auto;
-  width: 270px;
+  width: 265px;
 }
 
 #main {
   width: 500px;
-  margin-left: 285px;
-  margin-right: 0px;
+  margin-left: 275px;
+  margin-right: 5px;
 }
 
 #canvas {
