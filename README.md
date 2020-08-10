@@ -1,5 +1,5 @@
 # DFT-Simulator
-こちらはNS学科3年, 5S数値計算講義のレポート3で提出する教育支援プログラムです. このプログラムにはThe MIT License (MIT)であるChart.jsを用いています. 著作権表示については下記に行っておりますので詳細はそちらを参照してください.
+　こちらはNS学科3年, 5S数値計算講義のレポート3で提出する教育支援プログラムです. このプログラムにはThe MIT License (MIT)であるChart.jsを用いています. 著作権表示については下記に行っておりますので詳細はそちらを参照してください.
 ```
 The MIT License (MIT)
 
@@ -13,7 +13,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ```
 
 ## 動作確認済み閲覧環境
-2020/08/10現在, 動作確認が取れた閲覧環境を以下に記します(いずれも確認日において最新版に限る). 基本的にcanvasが使えないブラウザでは閲覧できませんので, 以下に挙げる推奨環境で閲覧ください.
+　2020/08/10現在, 動作確認が取れた閲覧環境を以下に記します(いずれも確認日において最新版に限る). 基本的にcanvasが使えないブラウザでは閲覧できませんので, 以下に挙げる推奨環境で閲覧ください.
 
 * Google Chrome
 * Opera
@@ -21,4 +21,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 * Edge
 
 ## 動作確認済み端末
-基本的にWebアプリケーションであるため, ブラウザが対応していれば端末の種類は関係ありません.
+　基本的にWebアプリケーションであるため, ブラウザが対応していれば端末の種類は関係ありません.
