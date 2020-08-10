@@ -1,5 +1,6 @@
 // dft.js @nkgw-marronnier 2020
-// DFT計算部分のアルゴリズムは @suda より引用
+// DFT計算部分のアルゴリズムは @sudahiroshi より引用
+// https://github.com/sudahiroshi/simple_dft
 
 var siki = 0;
 var sample = 0;
@@ -34,7 +35,7 @@ function button() {
   if (chart2) {
     chart2.destroy();
   }
-  
+
   calculate();
   graph();
 }
