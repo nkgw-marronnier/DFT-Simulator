@@ -108,7 +108,7 @@ ul li, ol li {
 }
 
 .wrapper {
-  min-height: 100vh;
+  min-height: 0vh;
   padding-bottom: 10px;
   box-sizing: border-box;
 }
