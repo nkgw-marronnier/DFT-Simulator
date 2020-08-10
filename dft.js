@@ -1,4 +1,5 @@
 // dft.js @nkgw-marronnier 2020
+//DFT計算部分のアルゴリズムは @suda
 
 var siki = 0;
 var sample = 0;
@@ -7,9 +8,11 @@ var jissuu = [];
 var sum = 0;
 var fd = [];
 
+//初回実行
 calculate();
 graph();
 
+//ラジオボタンで呼び出される
 function button() {
   var shiki = document.getElementsByName("siki");
   for (let i = 0; i < shiki.length; i++) {
@@ -23,6 +26,8 @@ function button() {
       sample = i;
     }
   }
+
+  //グラフインスタンスの初期化
   if (chart) {
     chart.destroy();
   }
@@ -33,6 +38,7 @@ function button() {
   graph();
 }
 
+//DFT計算アルゴリズム
 function calculate() {
 
   if (sample == 0) {
@@ -87,9 +93,13 @@ function calculate() {
   }
 }
 
+//グラフ描画
 function graph() {
 
   var flabel = [...Array(sum).keys()]
+
+  //時間領域
+  var ctx = document.getElementById('canvas').getContext('2d');
 
   const mydata = {
     labels: flabel,
@@ -101,7 +111,7 @@ function graph() {
       fill: false
     }],
   };
-  var ctx = document.getElementById('canvas').getContext('2d');
+
   window.chart = new Chart(ctx, {
 
     type: 'line',
@@ -124,6 +134,7 @@ function graph() {
     }
   });
 
+  //周波数領域
   var ctx2 = document.getElementById('canvas2').getContext('2d');
   const mydata2 = {
     labels: flabel,
