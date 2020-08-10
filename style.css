@@ -65,6 +65,7 @@ ul li, ol li {
 
 #canvas {
   background-color: #ffffd0;
+  margin-top: 10px;
   border-radius: 20px;
   padding-right: 10px;
 }
@@ -79,6 +80,7 @@ ul li, ol li {
 
 #canvas3 {
   background-color: #ddffff;
+  margin-top: 10px;
   border-radius: 20px;
   padding-right: 10px;
 }
