@@ -52,11 +52,11 @@ ul li, ol li {
 #panel {
   float: left;
   margin-right: auto;
-  width: 260px;
+  width: 15%;
 }
 
 #main {
-  width: 500px;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;;
 }
