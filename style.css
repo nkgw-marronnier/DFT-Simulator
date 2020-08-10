@@ -3,7 +3,7 @@ html {
   font-size: 18px;
   background: #fafafa;
   height: 100%;
-  margin: 0px;
+  margin: 10px;
 }
 
 h1 {
@@ -103,7 +103,7 @@ ul li, ol li {
 }
 
 .button {
-  padding-top: 20px;
+  padding-bottom: 10px;
   margin: 15px 15px;
 }
 

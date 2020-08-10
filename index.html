@@ -20,16 +20,27 @@
             <input type="radio" id="s1" class="size" name="siki" onchange="button()" checked>y(x)=sin(2x)</button><br>
             <input type="radio" id="s2" class="size" name="siki" onchange="button()">y(x)=sin(8x)</button><br>
             <input type="radio" id="s3" class="size" name="siki" onchange="button()">y(x)=4sin(20x)</button><br>
-            <input type="radio" id="s4" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button><br>
+            <input type="radio" id="s4" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button>
+            <ul>
+              <oi>
+                数式と睨めっこするよりも、実際に手を動かしてみれば案外理解できたりする。ということで、こちらで複数の数式を用意した。数式を選択すると時間領域、周波数領域が一目でわかる。慣れてきたら上級者用ｼﾐｭﾚｰﾀで、実際に自分で数式を自由に入力して離散フーリエ変換してみよう。
+              </oi>
+            </ul>
           </div>
           <div>
             <h3>標本数（サンプリング数）</h3>
-            <input type="radio" id="d02" name="sample" onchange="button()" checked class="size">10</button><br>
-            <input type="radio" id="d03" name="sample" onchange="button()" class="size">50</button><br>
-            <input type="radio" id="d04" name="sample" onchange="button()" class="size">100</button><br>
-            <input type="radio" id="d05" name="sample" onchange="button()" class="size">500</button><br>
-            <input type="radio" id="d05" name="sample" onchange="button()" class="size">1000</button><br>
+            <input type="radio" name="sample" onchange="button()" checked class="size">10</button>
+            <input type="radio" name="sample" onchange="button()" class="size">50</button>
+            <input type="radio" name="sample" onchange="button()" class="size">100</button><br>
+            <input type="radio" name="sample" onchange="button()" class="size">500</button>
+            <input type="radio" name="sample" onchange="button()" class="size">1000</button>
+            <input type="radio" name="sample" onchange="button()" class="size">5000</button><br>
           </div>
+          <ul>
+            <oi>
+              標本数を変えて、時間領域と周波数領域がどのように変化するかを確認しよう。慣れてきたら上級者用ｼﾐｭﾚｰﾀで標本数を自分で変えてみよう。
+            </oi>
+          </ul>
           <div class="button">
             <button type="button" class="normal" onclick="location.href='dft-ue.html'">上級者用ｼﾐｭﾚｰﾀ</button>
           </div>

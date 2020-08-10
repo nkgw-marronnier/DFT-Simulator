@@ -53,6 +53,8 @@ function calculate() {
     P = 500;
   } else if (sample == 4) {
     P = 1000;
+  } else if (sample == 5) {
+    P = 5000;
   }
 
   // 原関数定義
