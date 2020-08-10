@@ -56,7 +56,7 @@ function calculate2() {
 
   P = form1.sample.value;
 
-  var a, b, c, d = 0
+  var a, b, c, d = 0;
   a = form1.formula1.value;
   b = form1.formula2.value;
   c = form1.formula3.value;
