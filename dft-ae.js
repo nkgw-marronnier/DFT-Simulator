@@ -146,7 +146,7 @@ function graph() {
     datasets: [{
       label: '周波数領域',
       data: jissuu,
-      backgroundColor: '#aaf'
+      backgroundColor: '#56f'
     }]
   };
 
