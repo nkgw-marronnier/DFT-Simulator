@@ -1,5 +1,6 @@
 html {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 18px;
   background: #fafafa;
   height: 100%;
   margin: 0px;
@@ -23,10 +24,17 @@ h1:first-letter {
 }
 
 h3 {
+  font-size: 18px;
   padding: 0.25em 0.5em;
   color: #494949;
   background: transparent;
   border-left: solid 5px #a2de96;
+}
+
+input[type=radio] {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
 }
 
 #panel {
@@ -44,6 +52,7 @@ h3 {
 #canvas {
   background-color: #ffffd0;
   border-radius: 20px;
+  padding-right: 10px;
 }
 
 #canvas2 {
@@ -51,6 +60,7 @@ h3 {
   border-radius: 20px;
   margin-top: 10px;
   margin-bottom: 70px;
+  padding-right: 10px;
 }
 
 .normal {
@@ -58,9 +68,13 @@ h3 {
   height: 60px;
   font-size: 16pt;
   background-color: #f0ffff;
+  transition: color .3s;
 }
 
-
+.normal:hover {
+  color: #f0ffff;
+  background-color: #0a7cff;
+}
 
 .button {
   margin: 15px 15px;
