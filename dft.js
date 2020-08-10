@@ -1,18 +1,18 @@
 var siki = 0;
 var sample = 0;
-var P =0;
+var P = 0;
 
 function button() {
   var shiki = document.getElementsByName("siki");
   for (let i = 0; i < shiki.length; i++) {
-    if (shiki[i].checked){
-      siki=i;
+    if (shiki[i].checked) {
+      siki = i;
     }
   }
   var hyouhon = document.getElementsByName("sample");
   for (let i = 0; i < hyouhon.length; i++) {
-    if (hyouhon[i].checked){
-      sample=i;
+    if (hyouhon[i].checked) {
+      sample = i;
     }
   }
   event();
@@ -22,16 +22,16 @@ function event() {
 
   console.log(siki);
 
-  if(sample==0){
+  if (sample == 0) {
     P = 10;
-  }else if(sample == 1){
+  } else if (sample == 1) {
     P = 50;
-  }else if(sample == 2){
+  } else if (sample == 2) {
     P = 100;
-  }else if(sample == 3){
+  } else if (sample == 3) {
     P = 500;
-  }else if(sample == 4){
-    P =1000;
+  } else if (sample == 4) {
+    P = 1000;
   }
   var jissuu = [];
 
@@ -43,10 +43,10 @@ function event() {
     } else if (siki == 1) {
       console.log(2);
       return 1 * Math.sin(8 * x);
-    }else if(siki == 2){
-      return 5*Math.sin(20*x);
-    }else if(siki == 3){
-      return 1*Math.sin(2*x)+1*Math.cos(4*x);
+    } else if (siki == 2) {
+      return 5 * Math.sin(20 * x);
+    } else if (siki == 3) {
+      return 1 * Math.sin(2 * x) + 1 * Math.cos(4 * x);
     }
     //return 1 * Math.sin(2 * x) + 7.0 * Math.cos(3.0 * x);
   }
