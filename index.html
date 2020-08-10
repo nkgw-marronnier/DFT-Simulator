@@ -12,39 +12,41 @@
 
   <body>
     <h1>離散フーリエ変換シミュレータ</h1>
-    <div id="contents">
-      <div id="panel">
-        <div id="panel2">
-          <h3>離散フーリエ変換する数式</h3>
-          <input type="radio" id="s1" class="size" name="siki" onchange="button()" checked>y(x)=sin(2x)</button><br>
-          <input type="radio" id="s2" class="size" name="siki" onchange="button()">y(x)=sin(8x)</button><br>
-          <input type="radio" id="s3" class="size" name="siki" onchange="button()">y(x)=5sin(20x)</button><br>
-          <input type="radio" id="s4" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button><br>
+    <div class="wrapper">
+      <div id="contents">
+        <div id="panel">
+          <div id="panel2">
+            <h3>離散フーリエ変換する数式</h3>
+            <input type="radio" id="s1" class="size" name="siki" onchange="button()" checked>y(x)=sin(2x)</button><br>
+            <input type="radio" id="s2" class="size" name="siki" onchange="button()">y(x)=sin(8x)</button><br>
+            <input type="radio" id="s3" class="size" name="siki" onchange="button()">y(x)=5sin(20x)</button><br>
+            <input type="radio" id="s4" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button><br>
+          </div>
+          <div>
+            <h3>標本数（サンプリング数）</h3>
+            <input type="radio" id="d02" name="sample" onchange="button()" checked class="size">10</button><br>
+            <input type="radio" id="d03" name="sample" onchange="button()" class="size">50</button><br>
+            <input type="radio" id="d04" name="sample" onchange="button()" class="size">100</button><br>
+            <input type="radio" id="d05" name="sample" onchange="button()" class="size">500</button><br>
+            <input type="radio" id="d05" name="sample" onchange="button()" class="size">1000</button><br>
+          </div>
+          <div class="button">
+            <button type="button" id="start" class="normal">計算</button>
+            <button type="button" id="clear" class="normal">初期化</button>
+          </div>
         </div>
-        <div>
-          <h3>標本数（サンプリング数）</h3>
-          <input type="radio" id="d02" name="sample" onchange="button()" checked class="size">10</button><br>
-          <input type="radio" id="d03" name="sample" onchange="button()" class="size">50</button><br>
-          <input type="radio" id="d04" name="sample" onchange="button()" class="size">100</button><br>
-          <input type="radio" id="d05" name="sample" onchange="button()" class="size">500</button><br>
-          <input type="radio" id="d05" name="sample" onchange="button()" class="size">1000</button><br>
+        <div id="main">
+          <canvas id="canvas" width="500" height="400">
+            非対応のブラウザです。
+          </canvas>
+          <canvas id="canvas2" width="500" height="400">
+            非対応のブラウザです。
+          </canvas>
         </div>
-        <div class="button">
-          <button type="button" id="start" class="normal">計算</button>
-          <button type="button" id="clear" class="normal">初期化</button>
-        </div>
-      </div>
-      <div id="main">
-        <canvas id="canvas" width="500" height="400">
-          非対応のブラウザです。
-        </canvas>
-        <canvas id="canvas2" width="500" height="400">
-          非対応のブラウザです。
-        </canvas>
       </div>
       <footer>
         <p>Chiba Institute of Technology NS B3 nkgw-marronnier(1832099) 2020</p>
-    </footer>
+      </footer>
   </body>
   <script src="dft.js"></script>
 
