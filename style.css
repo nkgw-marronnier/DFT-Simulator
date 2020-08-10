@@ -2,7 +2,7 @@ html {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 18px;
   background: #fafafa;
-  height: 100%;
+  height: auto;
   margin: 5px;
 }
 
@@ -52,7 +52,7 @@ ul li, ol li {
 #panel {
   float: left;
   margin-right: auto;
-  width: 300px;
+  width: 280px;
 }
 
 #main {
