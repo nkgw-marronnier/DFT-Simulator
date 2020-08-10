@@ -2,7 +2,7 @@ html {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   background: #fafafa;
   height: 100%;
-  margin: 0;
+  margin: 0px;
 }
 
 h1 {
@@ -81,5 +81,5 @@ footer,
   background-color: #32cd32;
   color: #fafafa;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
 }
