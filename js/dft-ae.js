@@ -188,7 +188,7 @@ function graph() {
         callbacks: {
           label: function (tooltipItem, data) {
             return data.labels[tooltipItem.index] +
-              " Hzのとき " +
+              " Hz目のとき " +
               data.datasets[0].data[tooltipItem.index] +
               " の大きさ";
           }
