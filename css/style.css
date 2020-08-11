@@ -123,15 +123,15 @@ ol li {
 
 .normal:hover {
   color: #f0ffff;
-  background-color: #0a7cff;
+  background-color: #ff800a;
   cursor: pointer;
 }
 
 .keisan {
   width: 150px;
   height: 40px;
-  font-size: 10pt;
-  background-color: #f0ffff;
+  font-size: 12pt;
+  background-color: #fffdf0;
   transition: color .3s;
   margin-left: 25px;
 }
