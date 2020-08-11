@@ -134,8 +134,6 @@ function graph() {
     type: 'line',
     data: mydata,
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
       scales: {
         xAxes: [{
           scaleLabel: {
@@ -170,8 +168,6 @@ function graph() {
     type: 'bar',
     data: mydata2,
     options: {
-      responsive: true,
-      maintainAspectRatio: false,
       scales: {
         xAxes: [{
           scaleLabel: {
