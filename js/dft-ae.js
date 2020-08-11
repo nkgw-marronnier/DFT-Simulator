@@ -13,6 +13,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 // dft-ae.js @nkgw-marronnier 2020
 // DFT計算部分のアルゴリズムは @sudahiroshi より引用
 // https://github.com/sudahiroshi/simple_dft
+// chartの単位表示は @PikachuPunch より引用
+// https://qiita.com/PikachuPunch/items/ca68f457cfecb32b6eda
 
 var siki = 0;
 var sample = 0;
