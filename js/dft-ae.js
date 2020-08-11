@@ -181,7 +181,7 @@ function graph() {
               + " Hz"; //ここで単位を付けます
           }
         }
-      }
+      },
       scales: {
         xAxes: [{
           scaleLabel: {
