@@ -176,9 +176,9 @@ function graph() {
         callbacks: {
           label: function (tooltipItem, data) {
             return data.labels[tooltipItem.index]
-              + ": "
+              + " Hzで"
               + data.datasets[0].data[tooltipItem.index]
-              + " Hz"; //ここで単位を付けます
+              + " の大きさ"; //ここで単位を付けます
           }
         }
       },
