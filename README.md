@@ -15,9 +15,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 動作確認済み閲覧環境
 　2020/08/10現在, 動作確認が取れた閲覧環境を以下に記します(いずれも確認日において最新版に限る). 基本的にcanvasが使えないブラウザでは閲覧できませんので, 以下に挙げる推奨環境で閲覧ください. 下記の推奨環境下でも課題が正しく表示されないなどの問題がありましたら連絡ください.
 
-[早速, ページを閲覧する場合はこのリンクをクリックしてください.](https://nkgw-marronnier.github.io/DFT-Simulator/index.html)
+　[早速, ページを閲覧する場合はこのリンクをクリックしてください.](https://nkgw-marronnier.github.io/DFT-Simulator/index.html)
 
-もし別ウィンドウで開きたい場合にはCtrlを押下しながらリンクをクリックしてください.
+　もし別ウィンドウで開きたい場合にはCtrlを押下しながらリンクをクリックしてください.
 
 * Google Chrome
 * Opera
