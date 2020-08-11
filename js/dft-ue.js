@@ -25,10 +25,12 @@ graph2();
 
 // 入力欄の確認とグラフの更新
 function check() {
+  // 入力欄のエラー確認
   if (form1.formula1.value == "" || form1.sample.value == "" || form1.formula2.value == "" || form1.formula3.value == "" || form1.formula4.value == "") {
     alert("説明欄をよく読んでから数式, またはサンプル数を「正しく」入力しよう.");
     return false;
   } else {
+    // サンプル数のエラー確認
     if (form1.sample.value > 5000) {
       alert("その数値の大きさでは端末が固まってしまいます. 5000以下の値を入力しましょう.");
       return false;
@@ -36,7 +38,6 @@ function check() {
       alert("その数値の小ささでは計算不能です. よく考えて3以上の値を入力しましょう. ");
       return false;
     } else {
-
       // グラフインスタンスの初期化
       if (chart3) {
         chart3.destroy();
@@ -44,6 +45,7 @@ function check() {
       if (chart4) {
         chart4.destroy();
       }
+      // 更新
       calculate2();
       graph2();
       return true;
@@ -54,8 +56,10 @@ function check() {
 // DFT計算アルゴリズム
 function calculate2() {
 
+  // フォーム入力から標本数を取得
   P = form1.sample.value;
 
+  // フォーム入力から値を取得
   var a, b, c, d = 0;
   a = form1.formula1.value;
   b = form1.formula2.value;
@@ -64,6 +68,7 @@ function calculate2() {
 
   // 原関数定義
   function func_y(x) {
+    // フォーム入力から原関数を定義
     var e, g, h = 0;
     if (form1.sankaku.selectedIndex == 0) {
       e = a * Math.sin(b * x);
@@ -114,6 +119,7 @@ function calculate2() {
 // グラフ描画
 function graph2() {
 
+  // x軸の要素配列を作成
   var flabel2 = [...Array(sum).keys()]
 
   // 時間領域
