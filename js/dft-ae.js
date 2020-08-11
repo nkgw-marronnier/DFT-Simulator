@@ -144,7 +144,7 @@ function graph() {
         yAxes: [{
           scaleLabel: {
             display: true,
-            labelString: '振幅'
+            labelString: '振幅 →'
           }
         }]
       }
@@ -178,7 +178,7 @@ function graph() {
         yAxes: [{
           scaleLabel: {
             display: true,
-            labelString: '大きさ'
+            labelString: '大きさ →'
           }
         }]
       }
