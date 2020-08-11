@@ -24,21 +24,22 @@ var fd = [];
 calculate();
 graph();
 
-// ラジオボタンで呼び出される
+// ラジオボタン押下で呼び出される
 function button() {
+  // 離散フーリエ変換する式の選択
   var shiki = document.getElementsByName("siki");
   for (let i = 0; i < shiki.length; i++) {
     if (shiki[i].checked) {
       siki = i;
     }
   }
+  // 標本数の選択
   var hyouhon = document.getElementsByName("sample");
   for (let i = 0; i < hyouhon.length; i++) {
     if (hyouhon[i].checked) {
       sample = i;
     }
   }
-
   // グラフインスタンスの初期化
   if (chart) {
     chart.destroy();
@@ -46,14 +47,14 @@ function button() {
   if (chart2) {
     chart2.destroy();
   }
-
+  //更新
   calculate();
   graph();
 }
 
 // DFT計算アルゴリズム
 function calculate() {
-
+  // 標本数選択
   if (sample == 0) {
     P = 10;
   } else if (sample == 1) {
@@ -70,6 +71,7 @@ function calculate() {
 
   // 原関数定義
   function func_y(x) {
+    // 離散フーリエ変換する数式の選択
     if (siki == 0) {
       return 1 * Math.sin(2 * x);
     } else if (siki == 1) {
@@ -113,6 +115,7 @@ function calculate() {
 // グラフ描画
 function graph() {
 
+  // x軸の要素配列を作成
   var flabel = [...Array(sum).keys()]
 
   // 時間領域
