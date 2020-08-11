@@ -123,7 +123,7 @@ ol li {
 
 .normal:hover {
   color: #f0ffff;
-  background-color: #ff800a;
+  background-color: #0a7cff;
   cursor: pointer;
 }
 
@@ -138,7 +138,7 @@ ol li {
 
 .keisan:hover {
   color: #f0ffff;
-  background-color: #0a7cff;
+  background-color: #ff780a;
   cursor: pointer;
 }
 
