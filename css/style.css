@@ -131,6 +131,10 @@ ol li {
   margin: 15px 15px;
 }
 
+.button:hover{
+  cursor: pointer;
+}
+
 .wrapper {
   min-height: 100vh;
   padding-bottom: 10px;
