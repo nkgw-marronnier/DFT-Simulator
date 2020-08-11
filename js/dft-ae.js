@@ -144,7 +144,7 @@ function graph() {
             return data.labels[tooltipItem.index]
               + " 標本目のとき "
               + data.datasets[0].data[tooltipItem.index]
-              + " の値を標本化"; //ここで単位を付けます
+              + " の値を取得"; //ここで単位を付けます
           }
         }
       },
