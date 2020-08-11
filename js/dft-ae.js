@@ -138,6 +138,16 @@ function graph() {
     type: 'line',
     data: mydata,
     options: {
+      tooltips: {
+        callbacks: {
+          label: function (tooltipItem, data) {
+            return data.labels[tooltipItem.index]
+              + " 標本目のとき "
+              + data.datasets[0].data[tooltipItem.index]
+              + " の値を標本化"; //ここで単位を付けます
+          }
+        }
+      },
       scales: {
         xAxes: [{
           scaleLabel: {
@@ -176,7 +186,7 @@ function graph() {
         callbacks: {
           label: function (tooltipItem, data) {
             return data.labels[tooltipItem.index]
-              + " Hzで"
+              + " Hzのとき "
               + data.datasets[0].data[tooltipItem.index]
               + " の大きさ"; //ここで単位を付けます
           }
