@@ -167,14 +167,13 @@ function graph2() {
     datasets: [{
       label: '周波数領域',
       data: jissuu,
-      borderColor: '#f55',
-      fill: false
+      backgroundColor: '#f55',
     }]
   };
 
   window.chart4 = new Chart(ctx4, {
 
-    type: 'line',
+    type: 'bar',
     data: mydata4,
     options: {
       scales: {
