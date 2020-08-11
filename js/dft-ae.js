@@ -77,6 +77,8 @@ function calculate() {
     } else if (siki == 2) {
       return 4 * Math.sin(20 * x);
     } else if (siki == 3) {
+      return 1 * Math.sin(49 * x);
+    } else if (siki == 4) {
       return 1 * Math.sin(2 * x) + 1 * Math.cos(4 * x);
     }
   }
