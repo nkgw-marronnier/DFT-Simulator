@@ -172,6 +172,16 @@ function graph() {
     type: 'bar',
     data: mydata2,
     options: {
+      tooltips: {
+        callbacks: {
+          label: function (tooltipItem, data) {
+            return data.labels[tooltipItem.index]
+              + ": "
+              + data.datasets[0].data[tooltipItem.index]
+              + " Hz"; //ここで単位を付けます
+          }
+        }
+      }
       scales: {
         xAxes: [{
           scaleLabel: {
