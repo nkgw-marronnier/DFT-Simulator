@@ -9,57 +9,57 @@
   <link rel="icon" href="icon/nkgw-marronnier.ico">
   <meta name="format-detection" content="telephone=no">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <h1>離散フーリエ変換シミュレータ[簡易版]</h1>
-    <div class="wrapper">
-      <div id="contents">
-        <div id="panel">
-          <div id="panel2">
-            <h3>離散フーリエ変換する数式</h3>
-            <input type="radio" class="size" name="siki" onchange="button()" checked>y(x)=sin(2x)</button><br>
-            <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(8x)</button><br>
-            <input type="radio" class="size" name="siki" onchange="button()">y(x)=4sin(20x)</button><br>
-            <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(49x)</button><br>
-            <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button>
-            <ul>
-              <oi>
-                数式と睨めっこするより, 実際にやってみた方が理解できたりする. ということで, 複数の数式を用意した. 数式を選択すると時間領域, 周波数領域がわかる. 慣れてきたら上級者用ｼﾐｭﾚｰﾀで,
-                実際に自分で数式を入力して離散フーリエ変換してみよう.
-              </oi>
-            </ul>
-          </div>
-          <div>
-            <h3>標本数（サンプリング数）</h3>
-            <input type="radio" name="sample" onchange="button()" checked class="size">10</button>
-            <input type="radio" name="sample" onchange="button()" class="size">50</button>
-            <input type="radio" name="sample" onchange="button()" class="size">100</button><br>
-            <input type="radio" name="sample" onchange="button()" class="size">500</button>
-            <input type="radio" name="sample" onchange="button()" class="size">1000</button>
-            <input type="radio" name="sample" onchange="button()" class="size">5000</button><br>
-          </div>
+  <h1>離散フーリエ変換シミュレータ[簡易版]</h1>
+  <div class="wrapper">
+    <div id="contents">
+      <div id="panel">
+        <div id="panel2">
+          <h3>離散フーリエ変換する数式</h3>
+          <input type="radio" class="size" name="siki" onchange="button()" checked>y(x)=sin(2x)</button><br>
+          <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(8x)</button><br>
+          <input type="radio" class="size" name="siki" onchange="button()">y(x)=4sin(20x)</button><br>
+          <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(49x)</button><br>
+          <input type="radio" class="size" name="siki" onchange="button()">y(x)=sin(2x)+cos(4x)</button>
           <ul>
             <oi>
-              標本数を変えて, 時間領域と周波数領域がどのように変化するかを確認しよう. 慣れてきたら上級者用ｼﾐｭﾚｰﾀで標本数を自分で変えてみよう.
+              数式と睨めっこするより, 実際にやってみた方が理解できたりする. ということで, 複数の数式を用意した. 数式を選択すると時間領域, 周波数領域がわかる. 慣れてきたら上級者用ｼﾐｭﾚｰﾀで,
+              実際に自分で数式を入力して離散フーリエ変換してみよう.
             </oi>
           </ul>
-          <div class="button">
-            <button type="button" class="normal" onclick="location.href='dft-ue.html'">上級者用ｼﾐｭﾚｰﾀ</button>
-          </div>
         </div>
-        <div id="main">
-          <canvas id="canvas" width="700" height="600">
-          </canvas>
-          <canvas id="canvas2" width="700" height="600">
-          </canvas>
+        <div>
+          <h3>標本数（サンプリング数）</h3>
+          <input type="radio" name="sample" onchange="button()" checked class="size">10</button>
+          <input type="radio" name="sample" onchange="button()" class="size">50</button>
+          <input type="radio" name="sample" onchange="button()" class="size">100</button><br>
+          <input type="radio" name="sample" onchange="button()" class="size">500</button>
+          <input type="radio" name="sample" onchange="button()" class="size">1000</button>
+          <input type="radio" name="sample" onchange="button()" class="size">5000</button><br>
+        </div>
+        <ul>
+          <oi>
+            標本数を変えて, 時間領域と周波数領域がどのように変化するかを確認しよう. 慣れてきたら上級者用ｼﾐｭﾚｰﾀで標本数を自分で変えてみよう.
+          </oi>
+        </ul>
+        <div class="button">
+          <button type="button" class="normal" onclick="location.href='dft-ue.html'">上級者用ｼﾐｭﾚｰﾀ</button>
         </div>
       </div>
-      <footer>
-        <p>The MIT License (MIT) - Copyright (c) 2020 nkgw-marronnier</p>
-      </footer>
-  </body>
-  <script src="js/dft-ae.js"></script>
+      <div id="main">
+        <canvas id="canvas" width="700" height="600">
+        </canvas>
+        <canvas id="canvas2" width="700" height="600">
+        </canvas>
+      </div>
+    </div>
+    <footer>
+      <p>The MIT License (MIT) - Copyright (c) 2020 nkgw-marronnier</p>
+    </footer>
+</body>
+<script src="js/dft-ae.js"></script>
 
 </html>
