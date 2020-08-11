@@ -141,10 +141,10 @@ function graph() {
       tooltips: {
         callbacks: {
           label: function (tooltipItem, data) {
-            return data.labels[tooltipItem.index]
-              + " 標本目のとき "
-              + data.datasets[0].data[tooltipItem.index]
-              + " の値を取得"; //ここで単位を付けます
+            return data.labels[tooltipItem.index] +
+              " 標本目のとき " +
+              data.datasets[0].data[tooltipItem.index] +
+              " の値を取得"; //ここで単位を付けます
           }
         }
       },
@@ -185,10 +185,10 @@ function graph() {
       tooltips: {
         callbacks: {
           label: function (tooltipItem, data) {
-            return data.labels[tooltipItem.index]
-              + " Hzのとき "
-              + data.datasets[0].data[tooltipItem.index]
-              + " の大きさ"; //ここで単位を付けます
+            return data.labels[tooltipItem.index] +
+              " Hzのとき " +
+              data.datasets[0].data[tooltipItem.index] +
+              " の大きさ"; //ここで単位を付けます
           }
         }
       },
