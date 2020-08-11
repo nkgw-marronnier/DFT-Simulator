@@ -148,7 +148,7 @@ function graph2() {
             return data.labels[tooltipItem.index] +
               " 標本目のとき " +
               data.datasets[0].data[tooltipItem.index] +
-              " の値を取得"; //ここで単位を付けます
+              " の値を取得";
           }
         }
       },
@@ -192,7 +192,7 @@ function graph2() {
             return data.labels[tooltipItem.index] +
               " Hzのとき " +
               data.datasets[0].data[tooltipItem.index] +
-              " の大きさ"; //ここで単位を付けます
+              " の大きさ";
           }
         }
       },
