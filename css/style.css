@@ -123,12 +123,12 @@ ol li {
 .normal:hover {
   color: #f0ffff;
   background-color: #0a7cff;
+  cursor: pointer;
 }
 
 .button {
   padding-bottom: 10px;
   margin: 15px 15px;
-  cursor: pointer;
 }
 
 .wrapper {
