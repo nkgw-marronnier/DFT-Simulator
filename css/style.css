@@ -127,6 +127,21 @@ ol li {
   cursor: pointer;
 }
 
+.keisan {
+  width: 150px;
+  height: 60px;
+  font-size: 16pt;
+  background-color: #f0ffff;
+  transition: color .3s;
+  margin-left: 15px;
+}
+
+.keisan:hover {
+  color: #f0ffff;
+  background-color: #0a7cff;
+  cursor: pointer;
+}
+
 .button {
   padding-bottom: 10px;
   margin: 15px 15px;
