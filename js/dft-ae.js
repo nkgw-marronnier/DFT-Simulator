@@ -19,9 +19,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 var siki = 0;
 var sample = 0;
 var P = 0;
-var jissuu = new Array();
+var jissuu = [];
 var sum = 0;
-var fd = new Array();
+var fd = [];
 
 // 初回実行
 calculate();
