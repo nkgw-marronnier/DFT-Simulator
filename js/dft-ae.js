@@ -53,6 +53,7 @@ function button() {
   //更新
   jissuu.length = 0;
   fd.length = 0;
+  sum = 0;
   calculate();
   graph();
 }
@@ -211,5 +212,4 @@ function graph() {
       }
     }
   });
-  sum = 0;
 }
