@@ -48,6 +48,9 @@ function check() {
         chart4.destroy();
       }
       // 更新
+      jissuu.length = 0;
+      fd.length = 0;
+      sum = 0;
       calculate2();
       graph2();
       return true;
@@ -211,7 +214,4 @@ function graph2() {
       }
     }
   });
-  jissuu.length = 0;
-  fd.length = 0;
-  sum = 0;
 }
