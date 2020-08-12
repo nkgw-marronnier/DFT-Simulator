@@ -20,7 +20,7 @@ var siki = 0;
 var sample = 0;
 var P = 0;
 var jissuu = [];
-var sum = 0;
+var sum = 1;
 var fd = [];
 
 // 初回実行
@@ -53,7 +53,7 @@ function button() {
   //更新
   jissuu.length = 0;
   fd.length = 0;
-  sum = 0;
+  sum = 1;
   calculate();
   graph();
 }
