@@ -21,7 +21,7 @@ var sample = 0;
 var P = 0;
 var jissuu = new Array();
 var sum = 0;
-var fd = [];
+var fd = new Array();
 
 // 初回実行
 calculate();
@@ -93,7 +93,7 @@ function calculate() {
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
     // これはグラフ用であって標本化には関係ない
-    fd[m] = f[m];
+    fd.push(f[m]);
     sum += 1;
   }
 
@@ -209,5 +209,7 @@ function graph() {
       }
     }
   });
+  jissuu.length = 0;
+  fd.length = 0;
   sum = 0;
 }
