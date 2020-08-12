@@ -209,5 +209,7 @@ function graph() {
       }
     }
   });
+  fd.fill(0);
+  jissuu.fill(0);
   sum = 0;
 }
