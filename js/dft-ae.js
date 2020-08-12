@@ -92,7 +92,8 @@ function calculate() {
   // データサンプリング
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
-    fd[m] = f[m];// これはグラフ用であって標本化には関係ない
+    // これはグラフ用であって標本化には関係ない
+    fd[m] = f[m];
     sum += 1;
   }
   
@@ -118,7 +119,7 @@ function calculate() {
 function graph() {
 
   // x軸の要素配列を作成
-  var flabel = [...Array(sum-1).keys()]
+  var flabel = [...Array(sum).keys()]
 
   // 時間領域
   var ctx = document.getElementById('canvas').getContext('2d');
