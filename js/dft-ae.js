@@ -209,7 +209,8 @@ function graph() {
       }
     }
   });
-  jissuu.length = 0;
-  fd.length = 0;
   sum = 0;
 }
+
+jissuu.length = 0;
+fd.length = 0;
