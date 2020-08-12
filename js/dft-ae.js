@@ -88,7 +88,7 @@ function calculate() {
     } else if (siki == 3) {
       return 1 * Math.sin(49 * x);
     } else if (siki == 4) {
-      return 1 * Math.sin(2 * x) + 1 * Math.cos(4 * x);
+      return 1 * Math.sin(2 * x) + 2 * Math.cos(4 * x);
     }
   }
 
