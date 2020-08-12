@@ -54,7 +54,7 @@ function button() {
   jissuu.length = 0;
   fd.length = 0;
   sum = 1;
-  //更新
+  // 更新
   calculate();
   graph();
 }
