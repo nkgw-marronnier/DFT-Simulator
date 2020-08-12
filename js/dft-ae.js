@@ -95,7 +95,7 @@ function calculate() {
   }
   for (let i = 0, len = f.length; i < len; i++) {
     fd[i] = f[i];
-    sum += 1;
+    sum += 1; // これは標本化には関係ない
   }
 
   // DFT係数計算
