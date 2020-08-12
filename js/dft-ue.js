@@ -16,7 +16,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 // chartの単位表示は @PikachuPunch より引用
 // https://qiita.com/PikachuPunch/items/ca68f457cfecb32b6eda
 
-
 var P = 0;
 var jissuu = [];
 var sum = 0;
