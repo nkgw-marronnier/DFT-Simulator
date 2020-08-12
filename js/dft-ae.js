@@ -94,7 +94,7 @@ function calculate() {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
   }
   // これはグラフ用であって標本化には関係ない
-  for (let i = 0, len = f.length; i < len; i++) {
+  for (let i = 0, len = f.length; i < len-1; i++) {
     fd[i] = f[i];
     sum += 1;
   }
@@ -120,7 +120,7 @@ function calculate() {
 function graph() {
 
   // x軸の要素配列を作成
-  var flabel = [...Array(sum-1).keys()]
+  var flabel = [...Array(sum).keys()]
 
   // 時間領域
   var ctx = document.getElementById('canvas').getContext('2d');
