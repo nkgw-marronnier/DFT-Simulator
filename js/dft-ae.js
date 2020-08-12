@@ -50,10 +50,11 @@ function button() {
   if (chart2) {
     chart2.destroy();
   }
-  //更新
+  // 値、配列の初期化
   jissuu.length = 0;
   fd.length = 0;
   sum = 1;
+  //更新
   calculate();
   graph();
 }
