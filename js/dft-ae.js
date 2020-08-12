@@ -96,7 +96,6 @@ function calculate() {
     fd[m] = f[m];
     sum += 1;
   }
-  
 
   // DFT係数計算
   for (let n = 0; n < P; n++) {
