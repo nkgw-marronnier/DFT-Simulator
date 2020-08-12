@@ -93,7 +93,7 @@ function calculate() {
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
     // これはグラフ用であって標本化には関係ない
-    fd.push(f[m]);
+    fd = f[m];
     sum += 1;
   }
 
@@ -110,7 +110,7 @@ function calculate() {
     ar /= P;
     ai /= P;
     x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
-    jissuu.push(Math.round(x * 100) / 100);
+    jissuu[m] = Math.round(x * 100) / 100;
   }
 }
 
