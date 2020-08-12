@@ -123,7 +123,7 @@ function calculate2() {
 function graph2() {
 
   // x軸の要素配列を作成
-  var flabel2 = [...Array(sum).keys()]
+  var flabel2 = [...Array(sum-1).keys()]
 
   // 時間領域
   var ctx3 = document.getElementById('canvas3').getContext('2d');
