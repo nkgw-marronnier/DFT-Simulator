@@ -92,12 +92,10 @@ function calculate() {
   // データサンプリング
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
-  }
-  // これはグラフ用であって標本化には関係ない
-  for (let i = 0, len = f.length; i < len-1; i++) {
-    fd[i] = f[i];
+    fd[m] = f[m];// これはグラフ用であって標本化には関係ない
     sum += 1;
   }
+  
 
   // DFT係数計算
   for (let n = 0; n < P; n++) {
@@ -120,7 +118,7 @@ function calculate() {
 function graph() {
 
   // x軸の要素配列を作成
-  var flabel = [...Array(sum).keys()]
+  var flabel = [...Array(sum-1).keys()]
 
   // 時間領域
   var ctx = document.getElementById('canvas').getContext('2d');
