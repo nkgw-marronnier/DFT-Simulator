@@ -18,7 +18,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 var P = 0;
 var jissuu = new Array();
-var sum = 0;
+var sum = 1;
 var fd = new Array();
 
 // 初回実行
@@ -50,7 +50,7 @@ function check() {
       // 更新
       jissuu.length = 0;
       fd.length = 0;
-      sum = 0;
+      sum = 1;
       calculate2();
       graph2();
       return true;
