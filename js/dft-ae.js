@@ -110,7 +110,7 @@ function calculate() {
     ar /= P;
     ai /= P;
     x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
-    jissuu[m] = Math.round(x * 100) / 100;
+    jissuu[n] = Math.round(x * 100) / 100;
   }
 }
 
