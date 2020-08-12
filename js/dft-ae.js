@@ -51,6 +51,8 @@ function button() {
     chart2.destroy();
   }
   //更新
+  jissuu.length = 0;
+  fd.length = 0;
   calculate();
   graph();
 }
@@ -211,6 +213,3 @@ function graph() {
   });
   sum = 0;
 }
-
-jissuu.length = 0;
-fd.length = 0;
