@@ -95,7 +95,7 @@ function calculate2() {
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
     // これはグラフ用であって標本化には関係ない
-    fd[i] = f[i];
+    fd[m] = f[m];
     sum += 1;
   }
 
