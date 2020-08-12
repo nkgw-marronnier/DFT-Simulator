@@ -110,7 +110,7 @@ function calculate() {
     ar /= P;
     ai /= P;
     x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
-    jissuu.push( Math.round(x * 100) / 100);
+    jissuu.push(Math.round(x * 100) / 100);
   }
 }
 
@@ -118,7 +118,7 @@ function calculate() {
 function graph() {
 
   // x軸の要素配列を作成
-  var flabel = [...Array(sum+1).keys()]
+  var flabel = [...Array(sum).keys()]
 
   // 時間領域
   var ctx = document.getElementById('canvas').getContext('2d');
