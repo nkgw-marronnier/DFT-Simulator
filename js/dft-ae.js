@@ -24,8 +24,9 @@ var sum = 0;
 var fd = [];
 
 // 初回実行
-calculate();
-graph();
+button();
+//calculate();
+//graph();
 
 // ラジオボタン押下で呼び出される
 function button() {
