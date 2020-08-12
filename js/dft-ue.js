@@ -17,9 +17,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 // https://qiita.com/PikachuPunch/items/ca68f457cfecb32b6eda
 
 var P = 0;
-var jissuu = [];
+var jissuu = new Array();
 var sum = 0;
-var fd = [];
+var fd = new Array();
 
 // 初回実行
 calculate2();
@@ -95,7 +95,7 @@ function calculate2() {
   for (let m = 0; m < P; m++) {
     f[m] = func_y(((2.0 * Math.PI) / P) * m);
     // これはグラフ用であって標本化には関係ない
-    fd[m] = f[m];
+    fd.push(f[m]);
     sum += 1;
   }
 
@@ -112,7 +112,7 @@ function calculate2() {
     ar /= P;
     ai /= P;
     x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
-    jissuu[n] = Math.round(x * 100) / 100;
+    jissuu.push(Math.round(x * 100) / 100);
   }
 }
 
@@ -211,5 +211,7 @@ function graph2() {
       }
     }
   });
+  jissuu.length = 0;
+  fd.length = 0;
   sum = 0;
 }
