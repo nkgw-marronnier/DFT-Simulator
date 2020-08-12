@@ -19,7 +19,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 var siki = 0;
 var sample = 0;
 var P = 0;
-var jissuu = [];
+var jissuu = new Array();
 var sum = 0;
 var fd = [];
 
@@ -110,7 +110,7 @@ function calculate() {
     ar /= P;
     ai /= P;
     x = Math.sqrt(4.0 * ar * ar + 4.0 * ai * ai);
-    jissuu[n] = Math.round(x * 100) / 100;
+    jissuu.push( Math.round(x * 100) / 100);
   }
 }
 
