@@ -47,10 +47,11 @@ function check() {
       if (chart4) {
         chart4.destroy();
       }
-      // 更新
+      // 値、配列の初期化
       jissuu.length = 0;
       fd.length = 0;
       sum = 1;
+      // 更新
       calculate2();
       graph2();
       return true;
