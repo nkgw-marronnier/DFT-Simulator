@@ -1,4 +1,5 @@
 # DFT-Simulator
+<a href="https://codeclimate.com/github/nkgw-marronnier/DFT-Simulator/maintainability"><img src="https://api.codeclimate.com/v1/badges/dfa4dc4c116a32a00c08/maintainability" /></a>
 こちらはNS学科3年, 5S数値計算講義のレポート3で提出する教育支援シミュレータのプログラムです. このプログラムにはThe MIT License (MIT)であるChart.jsを用いています. 著作権表示については下記に行っておりますので詳細はそちらを参照してください. また, LICENSE.mdでも直接閲覧できます.
 ```
 The MIT License (MIT)
